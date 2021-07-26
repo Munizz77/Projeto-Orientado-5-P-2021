@@ -14,19 +14,17 @@
 
          $(document).ready(function() {
 
-            /*Fazendo o botão da tela de edição e exclusão de registros pegar o ID digitado pelo usuário e 
-            passando como parâmetro para a função getAgendaUnica() do JS. */
+
             $("#btn-enviar-id").click(function(){
                 let pesquisaId = $('#pesquisaID').val();
                 let id = [pesquisaId];
                 getAgendaUnica(id);
             });
               
-            /*Fazendo o outro botão de mostrar alteração. */
+   
              $("#btn-mostra-alteracao").click(function(){
                 
-                /*Criando uma variável HTML para mostrar os inputs pro usuário digitar os novos dados
-                somente quando o mesmo clicar no botão de alteração. */
+
                 let html = `
                      <input id="nome" type="text" placeholder="Novo Nome" />
                      <input id="telefoneResidencial" type="text" placeholder="Novo Telefone Residencial" />
@@ -37,7 +35,7 @@
                      <button  id="btn-enviar-alteracao" type="submit">Enviar novas alterações</button>
 
                 `;
-                //Fazendo a div resultados obter todo o html gerado.
+      
                 document.querySelector("#resultados").innerHTML = html;
 
                 //Criando a função do botão que enviará os novos registros
@@ -88,12 +86,12 @@
 
                     <button  id="btn-enviar-id" type="submit">VER REGISTRO</button>
 
-                    <!-- Div Onde aparecerá os novos dados-->
+
                      <div id="aquimesmo"></div>
 
                     <button  id="btn-mostra-alteracao" type="submit">MODIFICAR</button>
                     
-                    <!-- Div Onde aparecerá os dados para inserção de novos registros do usuário-->
+
                     <div id="resultados"></div>
 
                 </div>

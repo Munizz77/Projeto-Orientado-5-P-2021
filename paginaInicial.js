@@ -1,12 +1,11 @@
-        //Criando Banco de dados
+  
 		var banco = openDatabase('agendaTelefonica4','1.0','Bd das agendas',1024*10248*2);
 		banco.transaction(function(tx){
 			//Criando Tabela agendas
 			tx.executeSql('create table if not exists agendas(id INTEGER not null primary key AUTOINCREMENT, nome VARCHAR not null,  telefoneResidencial VARCHAR not null,  telefoneCelular VARCHAR not null,  email VARCHAR not null, redeSocial VARCHAR not null)');
 		})
-	
 
-	//Função para inserir novos dados na tabela
+	//
 	/**
 	 * 
 	 * @param {} dados 
