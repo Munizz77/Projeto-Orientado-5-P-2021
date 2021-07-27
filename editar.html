@@ -37,21 +37,18 @@
                 `;
       
                 document.querySelector("#resultados").innerHTML = html;
-
-                //Criando a função do botão que enviará os novos registros
                 $("#btn-enviar-alteracao").click(function(){
-                    //atribuindo os novos registros digitado pelo usuário em novas variáveis
+                    
                     let nome2 = $('#nome').val();
                     let cellcasa2 = $('#telefoneResidencial').val();
                     let celular2 = $('#telefoneCelular').val();
                     let email2 = $('#email').val();
                     let data2 = $('#data').val();
 
-                   //pegando ID para fazer a alteração correta no registro que o usuário informou 
+                 
                     let pesquisaId = $('#pesquisaID').val();
                     let id =pesquisaId;
 
-                    //Colocando os dados como parâmetro na função alteraAgenda
                     alteraAgenda(id,nome2,cellcasa2,celular2,email2,data2);
                 });
 
