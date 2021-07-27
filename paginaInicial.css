@@ -19,7 +19,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-	background-color: #E7E3E3;
+	background-color: #020101;
 }
 
 .menu-opcoes{
@@ -81,7 +81,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	padding-top: 15px;
-	color: black;
+	color: rgb(5, 47, 18);
     
 }
 
@@ -100,25 +100,11 @@ body{
 	width: 100%;
 	height: 35vh;
 	background-image: url("imagens/dada.png");
-	border-bottom: 2px solid rgb(0, 0, 0);
-	color:rgb(0, 0, 0);
+	border-bottom: 2px solid rgb(5, 47, 18);
+	color:rgb(255, 255, 255);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-}
-.btn-sobreNos{
-	align-self: center;
-	height: 35px;
-	width: 200px;
-	background-color: rgb(50,190,230);
-	color: white;
-	font-weight: 700;
-	transition-duration:0.7s;
-	cursor: pointer;
-	border: 1px solid white;
-}
-.btn-sobreNos:hover{
-	transform:scale(1.1);
 }
 
 .redes-Sociais{
